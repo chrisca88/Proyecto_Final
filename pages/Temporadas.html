@@ -4,47 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dragon Ball</title>
-    <link rel="shortcut icon" href="../assets/Images/dragon-balls-svgrepo-com.svg" type="image/png" />.
+    <link rel="shortcut icon" href="../assets/Images/dragon-balls-svgrepo-com.svg" type="image/png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <title>Dragon Ball</title>
 </head>
-<body class="cuerpo">
-    <header class="encabezado">
-        <nav>
-            <ul>
-                <li><a class="cambioColor navegacion" href="../index.html">Inicio</a></li>
-                <li><a class="cambioColor navegacion posicion" href="#">Temporadas</a></li>
-                <li><a class="cambioColor navegacion posicion1" href="./Galeria.html">Galeria</a></li>
-                <li><a class="cambioColor navegacion posicion2" href="./Tienda.html">Tienda</a></li>
-                <li><a class="cambioColor navegacion posicion3" href="./Contacto.html">Contacto</a></li>
-            </ul>
-        
-        </nav>
+<body class="cuerpo cuerpo-lg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/Images/icono_DB4.png" alt="" width="72" height="48" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Temporadas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Tienda.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <main class="principal">
+    <main class="principal1">
         <section>
             <h1 class="titulos">Temporadas</h1>
         </section>
-        <section>
-            <div>
-                <h2 class="subtitulos">Dragon Ball</h2>
-                <p class="parrafos texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit 
-                asperiores, cupiditate accusamus in, sed autem nobis blanditiis ea ab officia error soluta quos provident distinctio id doloremque, sapiente neque!</p>
-                <div class="galeriaImagen galeriaTam "><img src="../assets/Images/tinywow_1366_2000 (2)_7243815.png" alt="temporada1"></div>
-            </div>
-            <div>
-                <h2 class="subtitulos">Dragon Ball Z</h2>
-                <p class="parrafos texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit 
-                asperiores, cupiditate accusamus in, sed autem nobis blanditiis ea ab officia error soluta quos provident distinctio id doloremque, sapiente neque!</p>
-                <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_334926_7243865.jpg" alt="temporada1"></div>
-            </div>
-            <div>
-                <h2 class="subtitulos">Dragon Ball Super</h2>
-                <p class="parrafos texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit 
-                asperiores, cupiditate accusamus in, sed autem nobis blanditiis ea ab officia error soluta quos provident distinctio id doloremque, sapiente neque!</p>
-                <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_7225447_7243899.jpg" alt="temporada1"></div>
-            </div>
+        <section class="ocultar">
+            <div class="card mb-3" style="max-width: 1200px;">
+                <div class="row g-0" >
+                  <div class="col-md-4">
+                    <img src="../assets/Images/tinywow_1366_2000 (2)_7243815.png" class="img-fluid rounded-start transicion" alt="temporada_DB">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="card-title subtitulos">Dragon Ball</h2>
+                      <p class="card-text parrafos">Goku es un joven despreocupado con una fuerza prodigiosa cuya única herencia por parte de su abuelo es una de las esferas del dragón. El destino quiso que Bulma, una adolescente que deseaba pedir un deseo al dragón sagrado, lo reclutara en calidad de guardaespaldas en su búsqueda de las esferas restantes, derivando en toda clase de aventuras, combates en los que el propio destino de la Tierra ha estado en juego.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 1200px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../assets/Images/tinywow_334926_7243865.jpg" class="img-fluid rounded-start transicion" alt="temporada_DBZ">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="card-title subtitulos">Dragon Ball Z</h2>
+                      <p class="card-text parrafos">Se trata de la continuación de la serie Dragón ball, en ella se va narrando las aventuras de Goku unos cuantos años después.La historia narra como Goku debe luchar para defender la tierra de diversos enemigos, incluyendo como va creciendo y madurando su hijo, Gohan y como se desarrollan sus transformaciones.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card" style="max-width: 1200px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../assets/Images/tinywow_7225447_7243899.jpg" class="img-fluid rounded-start transicion" alt="temporada_DBS">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="card-title subtitulos">Dragon Ball Super</h2>
+                      <p class="card-text parrafos">Se narra la búsqueda, por parte del Dios de la destrucción Bills y su sirviente y mentor Whis, del Super Saiyajin Dios, que podría hacerle frente en una pelea, y así poder tener algo de diversión.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
         <section>
             <div class="whatsapp"><img src="../assets/Images/whatsapp-svgrepo-com.svg" alt=""></div>
@@ -53,16 +94,15 @@
 
     </main>
 
-    <footer class="pie">
-
-        <a class="cambioColor" href="../index.html">Inicio</a>
-        <a class="cambioColor" href="#">Temporadas</a>
-        <a class="cambioColor" href="./Galeria.html">Galeria</a>
-        <a class="cambioColor" href="./Tienda.html">Tienda</a>
-        <a class="cambioColor" href="./Contacto.html">Contacto</a>
-
-    </footer>
+    <footer class="container-fluid d-flex pie align-items-center">
+        <div class="row">
+          <div class="col"><a class="cambioColor sinDecoracion" href="../index.html">Inicio</a></div>
+          <div class="col"><a class="cambioColor sinDecoracion" href="#">Temporadas</a></div>
+          <div class="col"><a class="cambioColor sinDecoracion" href="./Galeria.html">Galeria</a></div>
+          <div class="col"><a class="cambioColor sinDecoracion" href="./Tienda.html">Tienda</a></div>
+          <div class="col"><a class="cambioColor sinDecoracion" href="./Contacto.html">Contacto</a></div>
+      </footer>
     
-    
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

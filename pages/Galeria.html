@@ -4,22 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dragon Ball</title>
-    <link rel="shortcut icon" href="../assets/Images/dragon-balls-svgrepo-com.svg" type="image/png" />.
+    <link rel="shortcut icon" href="../assets/Images/dragon-balls-svgrepo-com.svg" type="image/png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <title>Dragon Ball</title>
 </head>
-<body class="cuerpo">
-    <header class="encabezado">
-        <nav>
-            <ul>
-                <li><a class="cambioColor navegacion" href="../index.html">Inicio</a></li>
-                <li><a class="cambioColor navegacion posicion" href="./Temporadas.html">Temporadas</a></li>
-                <li><a class="cambioColor navegacion posicion1" href="#">Galeria</a></li>
-                <li><a class="cambioColor navegacion posicion2" href="./Tienda.html">Tienda</a></li>
-                <li><a class="cambioColor navegacion posicion3" href="./Contacto.html">Contacto</a></li>
-            </ul>
-        
-        </nav>
+<body class="cuerpo cuerpo-lg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/Images/icono_DB4.png" alt="" width="72" height="48" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Temporadas.html">Temporadas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Tienda.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main class="principal">
@@ -27,12 +47,12 @@
             <h1 class="titulos">Galeria</h1>
         </section>
         <section>
-        <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_387093_7244474.png" alt=""></div>
-        <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_335139_7244448.jpg" alt=""></div>
-        <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_202288_7244495.jpg" alt=""></div>
-        <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_6544000_7244515.jpg" alt=""></div>
-        <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_335094_7244591.jpg" alt=""></div>
-        <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_259521_7244626.jpg" alt=""></div>
+        <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_387093_7244474.png" alt="casa_goku"></div>
+        <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_335139_7244448.jpg" alt="dball1"></div>
+        <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_202288_7244495.jpg" alt="dball2"></div>
+        <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_6544000_7244515.jpg" alt="dball3"></div>
+        <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_335094_7244591.jpg" alt="dball4"></div>
+        <div class="galeriaImagen galeriaTam"><img src="../assets/Images/tinywow_259521_7244626.jpg" alt="dball5"></div>
         </section>
         <section>
             <div class="whatsapp"><img src="../assets/Images/whatsapp-svgrepo-com.svg" alt=""></div>
@@ -40,17 +60,15 @@
 
     </main>
 
-    <footer class="pie">
-         
-        <a class="cambioColor" href="../index.html">Inicio</a>
-        <a class="cambioColor" href="./Temporadas.html">Temporadas</a>
-        <a class="cambioColor" href="#">Galeria</a>
-        <a class="cambioColor" href="./Tienda.html">Tienda</a>
-        <a class="cambioColor" href="./Contacto.html">Contacto</a>
-        
-            
-    </footer>
+    <footer class="container-fluid d-flex pie align-items-center">
+        <div class="row">
+          <div class="col"><a class="cambioColor sinDecoracion" href="../index.html">Inicio</a></div>
+          <div class="col"><a class="cambioColor sinDecoracion" href="./Temporadas.html">Temporadas</a></div>
+          <div class="col"><a class="cambioColor sinDecoracion" href="#">Galeria</a></div>
+          <div class="col"><a class="cambioColor sinDecoracion" href="./Tienda.html">Tienda</a></div>
+          <div class="col"><a class="cambioColor sinDecoracion" href="./Contacto.html">Contacto</a></div>
+      </footer>
     
-    
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
