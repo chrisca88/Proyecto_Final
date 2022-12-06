@@ -1,0 +1,22 @@
+@mixin cuerpoPrincipal {
+    background:$fondoPrincipal;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;  
+}
+
+@mixin colorSubtitulos ($color){
+    font-size: map-get($tamFuentes, tamSubtitulo );
+    font-family: $tipografia;
+    color:$color;
+}
+
+@mixin logoWhatsapp ($tam){
+    .whatsapp{
+        width: $tam;
+        position: fixed;
+        bottom: 5%;
+        right: 0;
+    }
+}

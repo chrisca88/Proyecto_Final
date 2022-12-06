@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Martel:wght@200;300;400&family=Rubik:ital,wght@0,300;0,400;1,300&display=swap');
+$colorFondo: #f8f9fa;
+$justifarFinal: flex-end;
+$tipografia: 'Lato', 'Martel', 'Rubik', Geneva, Verdana, sans-serif;
+$ancho: 100%;
+$colorFondoPie: #ABB8C3;
+$colorTexto:aliceblue;
+$positionSticky: sticky;
+$displayFlex: flex;
+$alingItemCenter: center;
+$colorHoverpie: rgb(184, 29, 37);
+$colorTransp:rgba(0, 0, 0, 0.125);
+$sinDecoracion: none;
+$fondoPrincipal:linear-gradient(to right,rgba(0,0,0,0.125),rgba(0,0,0,0.125)), url(../assets/Images/Fondo.jpg);
+
+$tamFuentes:(
+    tamLetra: 1rem,
+    tamTitulo: 4rem,
+    tamSubtitulo: 2rem
+)
