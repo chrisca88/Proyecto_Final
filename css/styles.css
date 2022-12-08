@@ -181,7 +181,7 @@ header .colorNav {
     border-color: #e3e5e9; }
 
 .pos404 {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
@@ -190,6 +190,9 @@ header .colorNav {
     height: auto; }
   .pos404 .ti_404 {
     font-size: 4rem; }
+
+.rebalse {
+  overflow-y: scroll; }
 
 .pie {
   font-size: 1rem;
