@@ -14,49 +14,73 @@ header .colorNav {
     font-size: 4rem;
     color: aliceblue;
     text-align: center;
-    margin-bottom: 1%; }
+    margin-bottom: 1%;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
 
 .principal1 {
   width: 100%;
   height: 100%; }
   .principal1 .parrafos {
     font-size: 1rem;
-    font-family: "Lato", "Martel", "Rubik", Geneva, Verdana, sans-serif; }
+    font-family: "Lato", "Martel", "Rubik", Geneva, Verdana, sans-serif;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
   .principal1 .texto {
     width: 95%;
-    color: aliceblue; }
+    color: aliceblue;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
 
 .subtitulos {
   font-size: 2rem;
   font-family: "Lato", "Martel", "Rubik", Geneva, Verdana, sans-serif;
-  color: aliceblue; }
+  color: aliceblue;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
 
 .cuerpo {
   width: auto;
   height: 100vh; }
   .cuerpo .whatsapp {
-    width: 3%;
+    width: 15%;
     position: fixed;
     bottom: 5%;
     right: 0; }
 
-@media (max-width: 576px) {
-  .cuerpo-sm {
+.cuerpo-gal {
+  width: auto;
+  height: auto; }
+  .cuerpo-gal .whatsapp {
+    width: 15%;
+    position: fixed;
+    bottom: 5%;
+    right: 0; }
+
+@media (max-width: 767px) {
+  .cuerpo {
     width: auto;
-    height: 100vh; }
-    .cuerpo-sm .whatsapp {
-      width: 6%;
+    height: auto; }
+    .cuerpo .whatsapp {
+      width: 12%;
       position: fixed;
       bottom: 5%;
       right: 0; } }
 
-@media (max-width: 992px) {
-  .cuerpo-lg {
+@media (min-width: 768px) and (max-width: 991px) {
+  .cuerpo {
     width: auto;
-    height: auto;
+    height: 100vh;
     background: fixed; }
-    .cuerpo-lg .whatsapp {
-      width: 8%;
+    .cuerpo .whatsapp {
+      width: 15%;
+      position: fixed;
+      bottom: 5%;
+      right: 0; } }
+
+@media (min-width: 992px) {
+  .cuerpo-gal {
+    width: auto;
+    height: 100vh;
+    background: fixed; }
+    .cuerpo-gal .whatsapp {
+      width: 15%;
       position: fixed;
       bottom: 5%;
       right: 0; } }
@@ -108,22 +132,49 @@ header .colorNav {
   text-align: center;
   color: aliceblue; }
 
+.wrapper {
+  width: 100%; }
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+
+.contact-wrap {
+  background: rgba(0, 0, 0, 0.125); }
+
+.contactForm .label {
+  color: aliceblue;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600; }
+
+.contactForm .form-control {
+  border: none; }
+
+.form-group {
+  margin-bottom: 1rem; }
+
 .form-control {
   display: block;
-  width: 20%;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #495057;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+  border-radius: 0.25rem; }
+
+.btn-primary {
+  background-color: black;
+  border-color: black; }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #b4b6b8;
+    border-color: #e3e5e9; }
 
 .pie {
   font-size: 1rem;
