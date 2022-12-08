@@ -6,8 +6,8 @@
     overflow: hidden;  
 }
 
-@mixin colorSubtitulos ($color:$colorTexto){
-    font-size: map-get($tamFuentes, tamSubtitulo );
+@mixin Subtitulos ($tamano:map-get($tamFuentes, tamSubtitulo),$color:$colorTexto){
+    font-size: $tamano;
     font-family: $tipografia;
     color:$color;
 }

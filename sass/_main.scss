@@ -6,7 +6,6 @@
         text-align: $alingItemCenter;
         margin-bottom: 1%;
         text-shadow: $sombreado;
-        
     }
 }
 
@@ -18,7 +17,7 @@
         font-size: map-get($tamFuentes, tamLetra );
         font-family: $tipografia;
         text-shadow: $sombreado;
-    }
+    } 
     .texto{
         width: $ancho*0.95;
         color:$colorTexto;
@@ -27,9 +26,15 @@
 }
 
 .subtitulos{
-    @include colorSubtitulos(aliceblue);
+    @include Subtitulos(aliceblue);
     text-shadow: $sombreado;
 }
+
+.parrafoTienda{
+    @include Subtitulos(map-get($tamFuentes, tamLetra ),aliceblue);
+    text-shadow: $sombreado;
+}
+
 
 .cuerpo{
     width: auto;
@@ -81,10 +86,9 @@
 
 .transicion{
     transition: transform 3s;
-}
-
-.transicion:hover{
+    &:hover{
     transform: translate(15px,15px);
+    }
 }
 
 .cover{
@@ -103,14 +107,14 @@
 .imagenhover{
     transition: all 2s;
     z-index: -1;
+    &:hover{
+        filter:brightness(100%);
+        transform: scale(1.5);
+        z-index: 10;
+        overflow: hidden;
+    }
 }
 
-.imagenhover:hover{
-    filter:brightness(100%);
-    transform: scale(1.5);
-    z-index: 10;
-    overflow: hidden;
-}
 
 .card {
     position: relative;
@@ -181,3 +185,19 @@
             border-color: #e3e5e9;
         }
     }
+
+
+.pos404 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .imagen404{
+        max-width: $ancho;
+        height: auto;
+    
+    }
+    .ti_404{
+        font-size: map-get($tamFuentes, tamTitulo);
+    }
+  }
