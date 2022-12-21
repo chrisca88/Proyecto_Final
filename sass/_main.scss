@@ -17,6 +17,7 @@
         font-size: map-get($tamFuentes, tamLetra );
         font-family: $tipografia;
         text-shadow: $sombreado;
+        margin: $margen;
     } 
     .texto{
         width: $ancho*0.95;
@@ -35,24 +36,27 @@
     text-shadow: $sombreado;
 }
 
+.textRedes{
+    color: white;
+}
 
 .cuerpo{
     width: auto;
     height: 100vh;
-    @include logoWhatsapp (15%);
+    @include logoWhatsapp ($whatsapp);
 }
 
 .cuerpo-gal{
     width: auto;
     height: auto;
-    @include logoWhatsapp (15%);
+    @include logoWhatsapp ($whatsapp);
 }
 
 @media (max-width: 767px){
     .cuerpo {
       width: auto;
       height: auto;
-      @include logoWhatsapp (12%);
+      @include logoWhatsapp ($whatsapp);
     }
     
 }
@@ -62,7 +66,7 @@
       width: auto;
       height: 100vh;
       background: fixed;
-      @include logoWhatsapp (15%);
+      @include logoWhatsapp ($whatsapp);
     }
     
 }
@@ -72,7 +76,7 @@
         width: auto;
         height: 100vh;
         background: fixed;
-        @include logoWhatsapp (15%);
+        @include logoWhatsapp ($whatsapp);
     }
 }
 
@@ -134,11 +138,11 @@
 .wrapper {
         width: $ancho;
      }
-.no-gutters {
+.nogutters {
         margin-right: 0;
         margin-left: 0;
      }
-.contact-wrap {
+.contactwrap {
         background:$colorTransp; 
     }
     
@@ -150,16 +154,16 @@
         font-weight: 600;
     }
       
-    .form-control {
+    .formcontrol {
         border: none;
      }
     } 
       
-    .form-group {
+    .formgroup {
          margin-bottom: 1rem;
     }
             
-    .form-control {
+    .formcontrol {
         display: block;
         width: $ancho;
         height: calc(1.5em + 0.75rem + 2px);
@@ -176,9 +180,10 @@
                 
                 
 
-    .btn-primary {
+    .btnprimary {
         background-color:black;
         border-color: black;
+        color: $colorTexto;
         &:hover {
             color: #fff;
             background-color: #b4b6b8;
@@ -201,6 +206,3 @@
         font-size: map-get($tamFuentes, tamTitulo);
     }
   }
-.rebalse{
-    overflow-y: scroll;
-}

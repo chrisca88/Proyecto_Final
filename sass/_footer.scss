@@ -1,17 +1,30 @@
 .pie{
     font-size: map-get($tamFuentes, tamLetra );
     font-family: $tipografia;
-    background-color: $colorFondoPie;
     bottom: 0;
     position: $positionSticky;
     display: $displayFlex;
-    align-items: $alingItemCenter;
     .cambio{
-        &:hover{
-            color: $colorHoverpie;
-        }
-    }
-    .sinDecoracion{
-        text-decoration: $sinDecoracion;
+	    text-decoration: $sinDecoracion;
+        color: $colorTexto;
+        font-weight: bold;
+		    &:hover{
+			    color: $colorHover;
+            }
     }
 }
+
+
+.container-footer{
+    width: 100%;  
+    background: $colorFondoPie;
+    .footer{
+        margin:auto;
+        display: $displayFlex;
+        justify-content: space-between;  
+        padding: 1%;
+    }
+}
+
+
+

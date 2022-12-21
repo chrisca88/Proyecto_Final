@@ -12,11 +12,11 @@
     color:$color;
 }
 
-@mixin logoWhatsapp ($pos){
+@mixin logoWhatsapp ($pos:15%,$profundidad:8%){
     .whatsapp{
         width: $pos;
         position: fixed;
-        bottom: 5%;
+        bottom: $profundidad;
         right: 0;
     }
 }

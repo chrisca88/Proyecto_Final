@@ -3,6 +3,10 @@ header .colorNav {
   background-color: #f8f9fa; }
   header .colorNav .justificarFinal {
     justify-content: flex-end; }
+    header .colorNav .justificarFinal .colornavegacion {
+      color: black; }
+      header .colorNav .justificarFinal .colornavegacion:hover {
+        color: blue; }
 
 .principal, .principal1 {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125)), url(../assets/Images/Fondo.webp);
@@ -23,7 +27,8 @@ header .colorNav {
   .principal1 .parrafos {
     font-size: 1rem;
     font-family: "Lato", "Martel", "Rubik", Geneva, Verdana, sans-serif;
-    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    margin: 3%; }
   .principal1 .texto {
     width: 95%;
     color: aliceblue;
@@ -41,22 +46,25 @@ header .colorNav {
   color: aliceblue;
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
 
+.textRedes {
+  color: white; }
+
 .cuerpo {
   width: auto;
   height: 100vh; }
   .cuerpo .whatsapp {
-    width: 15%;
+    width: 10%;
     position: fixed;
-    bottom: 5%;
+    bottom: 8%;
     right: 0; }
 
 .cuerpo-gal {
   width: auto;
   height: auto; }
   .cuerpo-gal .whatsapp {
-    width: 15%;
+    width: 10%;
     position: fixed;
-    bottom: 5%;
+    bottom: 8%;
     right: 0; }
 
 @media (max-width: 767px) {
@@ -64,9 +72,9 @@ header .colorNav {
     width: auto;
     height: auto; }
     .cuerpo .whatsapp {
-      width: 12%;
+      width: 10%;
       position: fixed;
-      bottom: 5%;
+      bottom: 8%;
       right: 0; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -75,9 +83,9 @@ header .colorNav {
     height: 100vh;
     background: fixed; }
     .cuerpo .whatsapp {
-      width: 15%;
+      width: 10%;
       position: fixed;
-      bottom: 5%;
+      bottom: 8%;
       right: 0; } }
 
 @media (min-width: 992px) {
@@ -86,9 +94,9 @@ header .colorNav {
     height: 100vh;
     background: fixed; }
     .cuerpo-gal .whatsapp {
-      width: 15%;
+      width: 10%;
       position: fixed;
-      bottom: 5%;
+      bottom: 8%;
       right: 0; } }
 
 .parrafos2 {
@@ -139,11 +147,11 @@ header .colorNav {
 .wrapper {
   width: 100%; }
 
-.no-gutters {
+.nogutters {
   margin-right: 0;
   margin-left: 0; }
 
-.contact-wrap {
+.contactwrap {
   background: rgba(0, 0, 0, 0.125); }
 
 .contactForm .label {
@@ -152,13 +160,13 @@ header .colorNav {
   font-size: 0.8rem;
   font-weight: 600; }
 
-.contactForm .form-control {
+.contactForm .formcontrol {
   border: none; }
 
-.form-group {
+.formgroup {
   margin-bottom: 1rem; }
 
-.form-control {
+.formcontrol {
   display: block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
@@ -172,10 +180,11 @@ header .colorNav {
   border: 1px solid #ced4da;
   border-radius: 0.25rem; }
 
-.btn-primary {
+.btnprimary {
   background-color: black;
-  border-color: black; }
-  .btn-primary:hover {
+  border-color: black;
+  color: aliceblue; }
+  .btnprimary:hover {
     color: #fff;
     background-color: #b4b6b8;
     border-color: #e3e5e9; }
@@ -191,18 +200,24 @@ header .colorNav {
   .pos404 .ti_404 {
     font-size: 4rem; }
 
-.rebalse {
-  overflow-y: scroll; }
-
 .pie {
   font-size: 1rem;
   font-family: "Lato", "Martel", "Rubik", Geneva, Verdana, sans-serif;
-  background-color: #ABB8C3;
   bottom: 0;
   position: sticky;
-  display: flex;
-  align-items: center; }
-  .pie .cambio:hover {
-    color: #b81d25; }
-  .pie .sinDecoracion {
-    text-decoration: none; }
+  display: flex; }
+  .pie .cambio {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold; }
+    .pie .cambio:hover {
+      color: blue; }
+
+.container-footer {
+  width: 100%;
+  background: black; }
+  .container-footer .footer {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%; }

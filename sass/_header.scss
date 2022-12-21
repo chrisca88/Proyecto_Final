@@ -3,6 +3,12 @@ header{
         background-color:$colorFondo;
         .justificarFinal {
             justify-content: $justifarFinal;
+            .colornavegacion{
+                color: $colorTextoHeader;
+                &:hover{
+                    color:$colorHover;
+                }
+            }
           }
       }
 }
